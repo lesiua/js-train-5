@@ -162,9 +162,9 @@ function swapMinMax(array) {
 		"minIndex =",
 		minIndex
 	);
-	array[maxIndex] = min;
-	array[minIndex] = max;
-
+	// array[maxIndex] = min;
+	// array[minIndex] = max;
+	[array[maxIndex], array[minIndex]] = [array[minIndex], array[maxIndex]];
 	return array;
 
 	// Ініціалізуємо дві змінні (max і min) з першим елементом масиву. Ці змінні будуть використовуватися для зберігання максимального та мінімального значень в масиві.
